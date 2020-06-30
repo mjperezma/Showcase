@@ -1,0 +1,126 @@
+* {
+    font-family: 'Ubuntu',
+        sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #2e640f;
+
+}
+
+/* header */
+
+
+.header__container--title {
+
+    margin: 3rem;
+    text-align: center;
+
+}
+
+.icon {
+    width: 3rem;
+    height: auto;
+
+}
+
+.list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: space-around;
+}
+
+.list__item {
+    margin: 0 8rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.list__item::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #2e640f;
+    transition: width 0.3s;
+}
+
+.list__item:hover::after {
+    width: 100%;
+}
+
+/* carousell */
+.slider {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    overflow: hidden;
+    overflow-x: scroll;
+    margin: 5rem 2rem;
+
+}
+
+
+.slide {
+    flex-basis: 19rem;
+    margin: 1rem;
+    flex-shrink: 0;
+}
+
+.slide>img {
+    width: 20rem;
+    height: 15rem;
+    margin: 1rem 2rem;
+    border-radius: 0.2rem;
+    transition: all ease-in-out 0.9s;
+}
+
+.slide>img:hover {
+    transform: scale(1.2);
+}
+
+::-webkit-scrollbar {
+    width: 1rem;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+
+/* formulario */
+
+.form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.form>input {
+    margin: 0.5rem;
+    padding: 0.4rem;
+}
+
+/* products */
+
+.products {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+
+}
+
+.products__img {
+
+    width: 12rem;
+    height: auto;
+    margin: 2rem 0 2rem 4rem;
+}
