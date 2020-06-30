@@ -47,45 +47,98 @@
         <label for="">Busca tus productos favoritos</label>
         <input type="text" placeholder="Ej:fresas" />
       </form>
-      <section class="products">
-        <article>
-          <img class="products__img" src="./images/productos/manzana.jpg" alt="manzanas" />
-        </article>
-        <article>
-          <img class="products__img" src="./images/productos/naranja.jpg" alt="naranjas" />
-        </article>
-        <article>
-          <img class="products__img" src="./images/productos/pera.jpeg" alt="pera" />
-        </article>
-        <article>
-          <img class="products__img" class="producst__img" src="./images/productos/pimiento.jpeg" alt="pimientos" />
-        </article>
-        <article>
-          <img class="products__img" src="./images/productos/platanos.jpeg" alt="platanos" />
-        </article>
-        <article>
-          <img class="products__img" src="./images/productos/sandia.jpeg" alt="sandias" />
-        </article>
-        <article>
-          <img class="products__img" src="./images/productos/uvas.jpeg" alt="uvas" />
-        </article>
-        <article>
-          <img class="products__img" src="./images/productos/aguacate.jpg" alt="aguacate" />
-        </article>
-        <article>
-          <img class="products__img" src="./images/productos/cereza.jpg" alt="cerezas" />
-        </article>
-        <article>
-          <img class="products__img" src="./images/productos/fresas.jpeg" alt="fresas" />
-        </article>
-        <article>
-          <img class="products__img" src="./images/productos/kiwi.jpg" alt="kiwis" />
-        </article>
-        <article>
-          <img class="products__img" src="./images/productos/limon.jpg" alt="limon" />
-        </article>
+      <section>
+        <div class="products js-cart-items">
+          <article id="article-1" draggable="true">
+            <img class="products__img" src="./images/productos/manzana.jpg" alt="manzanas" />
+            <div class="container__price">
+              <h3>Manzanas</h3>
+              <small>1€/K</small>
+            </div>
+          </article>
+          <article id="article-2" draggable="true">
+            <img class="products__img" src="./images/productos/naranja.jpg" alt="naranjas" />
+            <div class="container__price">
+              <h3>Naranjas</h3>
+              <small>1€/K</small>
+            </div>
+          </article>
+          <article id="article-3" draggable="true">
+            <img class="products__img" src="./images/productos/pera.jpeg" alt="pera" />
+            <div class="container__price">
+              <h3>Peras</h3>
+              <small>1€/K</small>
+            </div>
+          </article>
+          <article id="article-4" draggable="true">
+            <img class="products__img" class="producst__img" src="./images/productos/pimiento.jpeg" alt="pimientos" />
+            <div class="container__price">
+              <h3>Pimiento</h3>
+              <small>0,8€/K</small>
+            </div>
+          </article>
+          <article id="article-5" draggable="true">
+            <img class="products__img" src="./images/productos/platanos.jpeg" alt="platanos" />
+            <div class="container__price">
+              <h3>Plátanos</h3>
+              <small>0,99€/K</small>
+            </div>
+          </article>
+          <article id="article-6" draggable="true">
+            <img class="products__img" src="./images/productos/sandia.jpeg" alt="sandias" />
+            <div class="container__price">
+              <h3>Sandia</h3>
+              <small>1,89€/K</small>
+            </div>
+          </article>
+          <article id="article-7" draggable="true">
+            <img class="products__img" src="./images/productos/uvas.jpeg" alt="uvas" />
+            <div class="container__price">
+              <h3>Uvas</h3>
+              <small>2,5€/K</small>
+            </div>
+          </article>
+          <article id="article-8" draggable="true">
+            <img class="products__img" src="./images/productos/aguacate.jpg" alt="aguacate" />
+            <div class="container__price">
+              <h3>Aguacate</h3>
+              <small>2,89€/K</small>
+            </div>
+          </article>
+          <article id="article-9" draggable="true">
+            <img class="products__img" src="./images/productos/cereza.jpg" alt="cerezas" />
+            <div class="container__price">
+              <h3>Cerezas</h3>
+              <small>2€/K</small>
+            </div>
+          </article>
+          <article id="article-10" draggable="true">
+            <img class="products__img" src="./images/productos/fresas.jpeg" alt="fresas" />
+            <div class="container__price">
+              <h3>Fresas</h3>
+              <small>2€/K</small>
+            </div>
+          </article>
+          <article id="article-11" draggable="true">
+            <img class="products__img" src="./images/productos/kiwi.jpg" alt="kiwis" />
+            <div class="container__price">
+              <h3>Kiwis</h3>
+              <small>3€/K</small>
+            </div>
+          </article>
+          <article id="article-12" draggable="true">
+            <img class="products__img" src="./images/productos/limon.jpg" alt="limon" />
+            <div class="container__price">
+              <h3>Limón</h3>
+              <small>1,50€/K</small>
+            </div>
+          </article>
+        </div>
+        <div id="js-cart"></div>
+        <img class="buy" src="./images/cesta.png" alt="cesta de la compra" />
       </section>
     </aside>
+    <footer>&copy; Realizado por María José Pérez</footer>
     <script src="./js/main.js"></script>
   </body>
 </html>

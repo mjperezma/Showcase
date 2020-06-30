@@ -111,7 +111,7 @@
 /* products */
 
 .products {
-
+    cursor: pointer;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -121,6 +121,50 @@
 .products__img {
 
     width: 12rem;
-    height: auto;
+    height: 10rem;
     margin: 2rem 0 2rem 4rem;
+}
+
+.container__price {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.2s linear,
+        opacity 0.2s linear;
+
+
+}
+
+.container__price>h3 {
+    text-transform: uppercase;
+}
+
+article:hover>.container__price {
+    visibility: visible;
+    opacity: 1;
+}
+
+.buy {
+    width: 5rem;
+    padding: 0.5rem;
+    border: 0.2rem solid #2e640f;
+    border-radius: 5rem;
+    position: fixed;
+    top: 32rem;
+    left: 74rem;
+}
+
+/* footer */
+
+footer {
+    padding-top: 2rem;
+    margin: 4rem 1rem 2rem 1rem;
+    border-top: 0.1rem solid #2e640f;
+    font-size: 0.8rem;
+
 }
