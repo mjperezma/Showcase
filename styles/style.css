@@ -154,9 +154,8 @@ article:hover>.container__price {
     padding: 0.5rem;
     border: 0.2rem solid #2e640f;
     border-radius: 5rem;
-    position: fixed;
-    top: 32rem;
-    left: 74rem;
+    margin-left: 15rem;
+    margin-top: 1rem;
 }
 
 /* footer */
@@ -167,4 +166,66 @@ footer {
     border-top: 0.1rem solid #2e640f;
     font-size: 0.8rem;
 
+}
+
+/* botones */
+
+.btn {
+    padding: 0.5rem;
+    margin: 0.5rem;
+    background-color: #ffff;
+    border: solid 0.15rem;
+    border-radius: 0.35rem;
+    cursor: pointer;
+}
+
+
+/* cesta de la compra */
+
+.container__cart {
+
+    position: fixed;
+    bottom: 1rem;
+    left: 58rem;
+}
+
+.article__add {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 0.05rem solid #2e640f;
+    width: 21rem;
+    margin-bottom: 0.5rem;
+    background-color: #ffff;
+}
+
+.article__add--img {
+    width: 4rem;
+    height: 3rem;
+    padding: 0.05rem;
+}
+
+.article__btn {
+    width: 0.9rem;
+    background-color: #ffff;
+    border: 0.05rem solid #2e640f;
+    border-radius: 0.3rem;
+    margin: 0.2rem;
+    cursor: pointer;
+
+}
+
+
+.btn__delete {
+
+    border: none;
+    cursor: pointer;
+    margin: 0.5rem;
+
+}
+
+.cart {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }

@@ -1,0 +1,80 @@
+{
+    "products": {
+        "items": [{
+                "id": "1",
+                "name": "Manzanas",
+                "price": 1,
+                "image": "../images/productos/manzana.jpg"
+            },
+            {
+                "id": "2",
+                "name": "Naranjas",
+                "price": 1,
+                "image": "../images/productos/naranja.jpg"
+
+            },
+            {
+                "id": "3",
+                "name": "Peras",
+                "price": 13,
+                "image": "../images/productos/pera.jpeg"
+
+            }, {
+                "id": "4",
+                "name": "Pimientos",
+                "price": 0.8,
+                "image": "../images/productos/pimiento.jpeg"
+
+            }, {
+                "id": "5",
+                "name": "Plátanos",
+                "price": 0.9,
+                "image": "../images/productos/platanos.jpeg"
+
+            }, {
+                "id": "6",
+                "name": "Sandía",
+                "price": 1.8,
+                "image": "../images/productos/sandia.jpeg"
+
+            }, {
+                "id": "7",
+                "name": "Uvas",
+                "price": 2.5,
+                "image": "../images/productos/uvas.jpeg"
+
+            }, {
+                "id": "8",
+                "name": "Aguacates",
+                "price": 2.9,
+                "image": "../images/productos/aguacate.jpg"
+
+            }, {
+                "id": "10",
+                "name": "Fresas",
+                "price": 2,
+                "image": "../images/productos/fresas.jpeg"
+
+
+            }, {
+                "id": "11",
+                "name": "Kiwis",
+                "price": 3,
+                "image": "../images/productos/kiwi.jpg"
+
+            }, {
+                "id": "12",
+                "name": "Limones",
+                "price": 1.5,
+                "image": "../images/productos/limon.jpg"
+
+            }, {
+                "id": "13",
+                "name": "Cerezas",
+                "price": 3,
+                "image": "../images/productos/cerezas.jpg"
+
+            }
+        ]
+    }
+}
