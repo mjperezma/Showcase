@@ -13,6 +13,7 @@ const getApiData = () => {
     .then((data) => {
       products = data.products.items;
       paintProducts();
+      paintCartElements();
     });
 };
 
@@ -20,7 +21,8 @@ const getApiData = () => {
 
 const getProductsHtmlCode = (product) => {
   let htmlCode = '';
-  htmlCode += `<article id="${product.id}" class='products__article' draggable='true'>`;
+  htmlCode += `<div ondrop='drop(event) ondragover='allowDrop(event)>`;
+  htmlCode += `<article onClick="productInfo()" ondragstart='dragStart(event)' draggable='true' ondragend='dragEnd(event)'  id="${product.id}" class='products__article js-product>'  draggable='true'>`;
   htmlCode += ` <img class='products__img' src="${product.image}"' alt='${product.name}' />`;
   htmlCode += `<div class='container__price'>`;
   htmlCode += ` <h3>${product.name}</h3>`;
@@ -30,6 +32,8 @@ const getProductsHtmlCode = (product) => {
     </button>`;
   htmlCode += `</div>`;
   htmlCode += `</article>`;
+  htmlCode += `</div>`;
+
   return htmlCode;
 };
 
@@ -197,5 +201,42 @@ const deleteProduct = (ev) => {
 };
 
 // iniciar app
+
 paintCartElements();
 getApiData();
+
+// drag and drop events
+
+const productInfo = () => {
+  console.log('hola', addProducts);
+  for (let addProduct of addProducts) {
+    console.log(addProduct.quantity, addProduct.id);
+  }
+  paintCartElements();
+};
+
+productInfo();
+
+const dragCart = document.querySelector('.js-drag-cart');
+let Id = document.getElementById('js-cart');
+let idDrag = document.getElementById('id.product');
+
+function dragStart(event) {
+  event.dataTransfer.setData('Text/plain', event.target.id);
+  console.log(event.target.id);
+}
+
+function dragEnd(event) {
+  dragCart.classList.add('active');
+}
+
+function allowDrop(event) {
+  event.preventDefault();
+}
+
+function drop(event) {
+  event.preventDefault();
+  var data = event.dataTransfer.getData('Text');
+
+  event.target.appendChild(document.getElementById(data));
+}

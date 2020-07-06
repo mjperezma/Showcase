@@ -50,11 +50,11 @@
       </form>
       <div class="products js-cart-items"></div>
       <section class="container__cart">
-        <div id="js-cart" class="cart"></div>
-        <img class="buy" src="./images/cesta.png" alt="cesta de la compra" />
+        <div id="js-cart" class="cart js-drag-cart" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <img class="buy js-draggable-cart" src="./images/cesta.png" alt="cesta de la compra" />
       </section>
     </aside>
     <footer>&copy; Realizado por María José Pérez</footer>
-    <script src="./js/main.js"></script>
+    <script type="text/javascript" src="./js/main.js"></script>
   </body>
 </html>
