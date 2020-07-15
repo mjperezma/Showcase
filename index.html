@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet" />
     <link rel="shortcut icon" href="./images/cesta.png" type="image/x-icon" />
+    <script src="https://kit.fontawesome.com/3262f75e4a.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
     <link rel="stylesheet" href="./styles/style.css" />
 
@@ -48,10 +49,223 @@
         <label for="">Busca tus productos favoritos</label>
         <input type="text" placeholder="Ej:fresas" />
       </form>
-      <div class="products js-cart-items"></div>
-      <section class="container__cart">
-        <div id="js-cart" class="cart js-drag-cart" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-        <img class="buy js-draggable-cart" src="./images/cesta.png" alt="cesta de la compra" />
+      <div class="js-cart-items">
+        <div class="products">
+        <article  draggable="true" id="manzanas-1" class="products__article js-product" >
+          <div class='product__resume'>
+          <img class="products__img" src="../images/productos/manzana.png" alt="Manzanas" />
+          <div class="container__price">
+            <div class="container__btn">
+              <button class="article__btn js-dec" >-</button>
+              <input type="number" value='1' class='quantity' placeholder="1" min="0" max="10" />
+              <button class="article__btn js-inc" >+</button>
+            </div>            
+            <div >
+              <h3>Manzanas</h3>
+               <span class='price'>1.2</span>
+               <small>€</small>
+            </div>
+            <small class='info-product'>Precio por cada Kg</small>
+             </div>          
+          </div>
+        </article>
+        <article draggable="true" id="Zanahoria-2" class="products__article js-product" >
+          <div class='product__resume'>
+          <img class="products__img" src="../images/productos/zanahoria.png" alt="Naranjas" />
+          <div class="container__price">
+            <div class="container__btn">
+              <button class="article__btn js-dec" >-</button> 
+              <input type="number" value='1' class='quantity' placeholder="1" min="0" max="10" />
+              <button class="article__btn js-inc" >+</button>
+            </div>
+             <div>
+              <h3>Zanahoria</h3>
+                  <span class='price'>1</span>
+               <small>€</small>
+            </div>
+            <small class='info-product'>Precio por cada Kg</small>          
+            </div>            
+          </div>
+        </article>
+        <article  draggable="true"  id="Peras-3" class="products__article js-product">
+          <div class='product__resume'>
+          <img class="products__img" src="../images/productos/peras.png" alt="Peras" />
+          <div class="container__price">
+            <div class="container__btn">
+              <button class="article__btn js-dec" >-</button>
+               <input type="number" value='1' class='quantity' placeholder="1" min="0" max="10" />
+               <button class="article__btn js-inc">+</button>
+              </div>
+            <div>
+              <h3>Peras</h3>
+                <span class='price'>1.9</span>
+               <small>€</small>
+            </div>
+            <small class='info-product'>Precio por cada Kg</small>
+            </div>
+          </div>
+        </article>
+        <article  draggable="true" id="Melón-4" class="products__article js-product" >
+          <div class='product__resume'>
+          <img class="products__img" src="../images/productos/melon.png" alt="Manzanas" />
+          <div class="container__price">
+            <div class="container__btn"><button class="article__btn js-dec" >-</button> 
+              <input type="number" value='1' class='quantity' placeholder="1" min="0" max="10" />
+              <button class="article__btn js-inc" >+</button>
+            </div>
+            <div>
+              <h3>Melón</h3>
+                 <span class='price'>0.8</span>
+               <small>€</small>
+            </div>
+            <small class='info-product'>Precio por cada Kg</small>
+             </div>
+          </div>
+        </article>
+        <article  draggable="true" id="Plátanos-5" class="products__article js-product" >
+          <div class='product__resume'>
+          <img class="products__img" src="../images/productos/platano.png" alt="Plátanos" />
+          <div class="container__price">
+            <div class="container__btn"><button class="article__btn js-dec" >-</button>
+              <input type="number" value='1' class='quantity' placeholder="1" min="0" max="10" />
+              <button class="article__btn js-inc">+</button>
+            </div>
+            <div>
+              <h3>Plátanos</h3>
+              <span class='price'>1.9</span>
+               <small>€</small>
+            </div>
+            <small class='info-product'>Precio por cada Kg</small>
+            </div>
+          </div>
+        </article>
+        <article  draggable="true" id="Sandía-6" class="products__article js-product">
+         <div class='product__resume'>
+          <img class="products__img" src="../images/productos/sandia.png" alt="Sandía" />
+          <div class="container__price">
+            <div class="container__btn"><button class="article__btn js-dec" >-</button>
+              <input type="number" value='1' class='quantity' placeholder="1" min="0" max="10" />
+              <button class="article__btn js-inc" >+</button>
+            </div>
+            <div>
+              <h3>Sandía</h3>
+                <span class='price'>1.5</span>
+               <small>€</small>
+            </div>
+            <small class='info-product'>Precio por cada Kg</small>
+            </div>
+          </div>
+        </article>
+        <article draggable="true" id="Coco-7" class="products__article js-product" >
+          <div class='product__resume'>
+          <img class="products__img" src="../images/productos/coco.png" alt="Uvas" />
+          <div class="container__price">
+            <div  class="container__btn" ><button class="article__btn js-dec" >-</button>
+              <input type="number" value='1' class='quantity' placeholder="1" min="0" max="10" />
+              <button class="article__btn js-inc" >+</button>
+            </div>
+            <div >
+              <h3>Coco</h3>
+              <span class='price'>2.8</span>
+               <small>€</small>
+            </div>
+            <small class='info-product'>Precio por cada Kg</small>
+             </div>
+          </div>
+        </article>
+        <article draggable="true"  id="Aguacates-8" class="products__article js-product" >
+          <div class='product__resume'>
+          <img class="products__img" src="../images/productos/aguacate.png" alt="aguacates" />
+          <div class="container__price">
+            <div class="container__btn"><button class="article__btn js-dec" >-</button>
+              <input type="number" value='1' class='quantity' placeholder="1" min="0" max="10" />
+              <button class="article__btn js-inc">+</button>
+            </div>
+            <div>
+              <h3>Aguacates</h3>
+               <span class='price'>2.9</span>
+               <small>€</small>
+            </div>
+             <small class='info-product'>Precio en € por cada Kg</small>
+          </div>
+          </div>
+        </article>
+        <article draggable="true"  id="Fresas-9" class="products__article js-product">
+          <div class='product__resume'>
+          <img class="products__img" src="../images/productos/fresas.png" alt="fresas" />
+          <div class="container__price">
+            <div class="container__btn"><button class="article__btn js-dec" >-</button>
+              <input type="number" value='1' class='quantity' placeholder="1" min="0" max="10" />
+              <button class="article__btn js-inc" >+</button>
+            </div>
+            <div>
+              <h3>Fresas</h3>
+                  <span class='price'>1.8</span>
+               <small>€</small>
+            </div>
+            <small class='info-product'>Precio por cada Kg</small>
+          </div>
+          </div>
+        </article>
+        <article  draggable="true"  id="Kiwi-10" class="products__article js-product" >
+          <div class='product__resume'>
+          <img class="products__img" src="../images/productos/kiwis.png" alt="kiwi" />
+          <div class="container__price">
+            <div class="container__btn"><button class="article__btn js-dec" >-</button>
+              <input type="number" value='1' class='quantity' placeholder="1" min="0" max="10" />
+              <button class="article__btn js-inc" >+</button>
+            </div>
+            <div>
+              <h3>Kiwis</h3>
+                 <span class='price'>2.8</span>
+               <small>€</small>
+            </div>
+            <small class='info-product'>Precio por cada Kg</small>
+          </div>
+          </div>
+        </article>
+        <article draggable="true"  id="Limones-11" class="products__article js-product" >
+          <div class='product__resume'>
+          <img class="products__img" src="../images/productos/limones.png" alt="limones" />
+          <div class="container__price">
+            <div class="container__btn"><button class="article__btn js-dec">-</button> <input type="number" value='1' class='quantity' placeholder="1" min="0" max="10" /><button class="article__btn js-inc" >+</button></div>
+            <div>
+              <h3>Limones</h3>
+                <span class='price'>1.8</span>
+               <small>€</small>
+            </div>
+            <small class='info-product'>Precio por cada Kg</small>
+            </div>
+            </article>
+        </article>
+        <article  draggable="true"  id="Cerezas-12" class="products__article js-product" >
+          <div class='product__resume'>
+          <img class="products__img"  src="../images/productos/cereza.png" alt="Cerezas" />
+          <div class="container__price">
+            <div class="container__btn">
+              <button class="article__btn js-dec" >-</button> 
+              <input type="number" value='1' class='quantity' placeholder="1" min="0" max="10" />
+              <button class="article__btn js-inc" >+</button>
+            </div>
+            <div>
+              <h3>Cerezas</h3>
+              <span class='price'>3</span>
+               <small>€</small>
+            </div>
+            <small class='info-product'>Precio por cada Kg</small>
+          </div>
+            </div>
+        </article>
+      </div>
+      <section class="container__cart js-cart">
+        <div id="js-cart" class="cart js-drag-list" >          
+        </div>
+        <div class='js-price'></div>
+        <img class="buy" src="./images/cesta.png" alt="cesta de la compra" /> 
+        <section class='container__info'>
+        <span class='js-total'></span>
+        <span class='cart-price'></span>
+        </section>
       </section>
     </aside>
     <footer>&copy; Realizado por María José Pérez</footer>
