@@ -33,7 +33,6 @@ for (let index = 0; index < containerInputs.length; index++) {
 const cart = document.querySelector('.js-cart');
 const cartList = document.querySelector('.js-drag-list');
 const totalProducts = document.querySelector('.js-total');
-const price = document.querySelector('.js-price');
 const products = document.querySelectorAll('.js-product');
 const addCarts = document.querySelectorAll('.js-btn');
 
@@ -63,7 +62,7 @@ cart.addEventListener('dragover', dragOver);
 // add to cart
 
 const addToCart = (id, product) => {
-  let exists = document.querySelectorAll(".js-drag-list .js-product[data-id='" + id + "']");
+  let exists = document.querySelectorAll(".js-product[data-id='" + id + "']");
 
   if (exists.length > 0) {
     updateProducts(exists[0]);
@@ -98,7 +97,7 @@ const addCartProduct = (id, product) => {
   deleteIcon.setAttribute('class', 'fas fa-trash');
   cloneProduct.appendChild(deleteIcon);
 
-  deleteIcon.addEventListener('click', function () {
+  deleteIcon.addEventListener('click', function deleteIcon() {
     let itemToDelete = this.parentElement;
     itemToDelete.parentNode.removeChild(itemToDelete);
     priceCart();
@@ -128,10 +127,9 @@ const priceCart = () => {
     let cartProduct = cartProducts[index];
     let quantity = cartProduct.getAttribute('data-quantity');
     let price = cartProduct.querySelector('.price').textContent;
-    let totalCart = quantity * parseFloat(price);
+    let totalCart = parseFloat(quantity) * parseFloat(price);
     let infoCartProduct = cartProduct.querySelector('span.sum');
-    infoCartProduct.innerHTML = ' =  ' + totalCart + '€';
-
+    infoCartProduct.innerHTML = ' =  ' + totalCart.toFixed(2) + '€';
     totalPrice += totalCart;
 
     let allProducts = cartProduct.getAttribute('data-quantity');
@@ -141,6 +139,6 @@ const priceCart = () => {
   let infoPrice = document.querySelector('.cart-price');
   let infoQuantity = document.querySelector('.js-total');
 
-  infoPrice.innerHTML = `<p> Total a pagar: ${totalPrice}€</p>`;
+  infoPrice.innerHTML = `<p> Total a pagar: ${totalPrice.toFixed(2)}€</p>`;
   infoQuantity.innerHTML = `<p> Cantidad: ${totalQuantity} KG</p>`;
 };
