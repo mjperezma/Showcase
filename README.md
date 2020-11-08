@@ -6,7 +6,9 @@ Este trabajo ha sido realizado ✂️  con:
 
 - HTML5
 - CSS3
-- Javascript
+- Javascript.
+
+
   Por lo que no necesitarás descargarte nada más a parte de clonar el repositorio para poder verlo.
 
 Hecho con ❤️ por mjperezma.
